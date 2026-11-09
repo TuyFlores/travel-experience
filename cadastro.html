@@ -12,7 +12,7 @@
         <h1>✈️Travel Experience</h1>
         <nav>
             <a href="/index.html">Inicio</a>
-            <a href="index.html#destinos">Destinos</a>
+            <a href="index.html#destino">Destinos</a>
         </nav>
     </header>
 
@@ -26,14 +26,12 @@
             <label for="email">Email:</label>
             <input type="text"  id="email" placeholder="seu@email.com" required><br><br>
 
-            <label for="destinos">Destinos desejados:</label>
-            <select  id="destinos">
+            <label for="destino">Destinos desejados:</label>
+            <select  id="destino" name="destino" required>
                     <option value="">Escolha seu Destino</option>
                     <option value="Rio de Janeiro">Rio de Janeiro</option>
                     <option value="Paris">Paris</option>
-                    <option value="Malvidas">Maldivas</option>
-        
-
+                    <option value="Maldivas">Maldivas</option>
             </select>
             <button type="submit">Enviar Cadastros</button>
             <p id="mensagem" aria-live="polite"></p>
@@ -45,5 +43,7 @@
     <footer>
         <p>Travel Experience 2026</p>
     </footer>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
