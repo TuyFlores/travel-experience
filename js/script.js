@@ -1,7 +1,7 @@
-const botao = document.querySelector("botaoMostrar")
-const retorno = document,querySelector("#retorno")
+const botaoCriar = document.getElementById("botaoCriar");
 
-botao.addEventListener("click" , function() {
+const retorno = document.getElementById("retorno");
 
-    retorno.textContent = "Você clicou no botão!";
-}
+
+
+
