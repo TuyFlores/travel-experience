@@ -1,35 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pr-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Botão com Java</title>
-<link rel="stylesheet" href="/CSS/style.css">
+    <title>Calculo</title>
+
+    <link rel="stylesheet" href="/CSS/style.css">
 
 </head>
 <body>
     
-    <main class="container">
+    <h2>Calculos</h2>
 
-        <h1>Personalizador de Texto</h1>
-        
-        <form action="formEstilo">
-            <label for="campoCor">Cor (nome ou hex)</label><br><br>
-            <input type="text" id="campoCor" placeholder="ex: red ou #ff0000"></input><br><br>
+    <form id="formCalculo">
 
-            <label for="campoPadding">Padding (px):</label><br><br>
-            <input type="number" id="campoPadding" placeholder="ex: 10"></input><br><br>
+        <label for="numero1">Primeiro Numero:</label><br><br>
+        <input type="number" id="numero1" placeholder="Ex: 10"> <br><br>
 
-            <label for="campoTamanho">Tamanho da letra (px):</label><br><br>
-            <input type="number" id="campoTamanho" placeholder="ex: 20"><br><br>
-            <button type="submit">Aplicar</button>
-        </form>
-        <p id="retorno">Esta é a sua mensagem!</p>
+        <label for="numero2">Segundo Numero:</label><br><br>
+        <input type="number2" id="numero2" placeholder="Ex: 10"><br><br>
 
-    </main>
+        <button type="submit">somar</button>
+
+    </form>
+
+    <p id="resultadoCalculo"></p>
 
     <script src="/js/script.js"></script>
-
-
 </body>
 </html>
