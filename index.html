@@ -11,40 +11,66 @@
 <header>
     <h1>👕Lojas de Roupas👗</h1>
 </header>
-<main class="carrossel">
-    <div class="trilho">
+<main class="area-contato">
+   
+    <form class="formulario">
+       
+         <h2>Fale com a gente</h2>
 
-<div class="slide">
-    <img src="/img/calça baggy.png" alt="calça baggy">
-                <h2>Calça baggy</h2>
-                <p class="preço">R$ 119,90</p>
-</div>
 
-<div class="slide">
-    <img src="/img/camisa de jesus.jpg" alt="Camisa de Jesus">
-                <h2>Camiseta de jesus</h2>
-                <p class="preço">R$ 59,90</p>
-</div>
 
-<div class="slide">
-    <img src="/img/jaqueta de couro.jpg" alt="Jaqueta de couro">
-                    <h2>Jaqueta de couro</h2>
-                    <p class="preço">R$ 79,90</p>
-</div>
 
-<div class="slide">
-    <img src="/img/tenis.jpg" alt="tenis">
-                    <h2>tenis dangers</h2>
-                    <p class="preço">R$ 149,99</p>
-</div>
+        <label for="nome">Nome</label><br><br>
+        <input type="text" id="nome" placeholder="Digite seu nome" required minlength="3" ><br><br>
 
-<div class="slide">
-    <img src="/img/vestido.jpg" alt="Vestido">
-                    <h2>Vestido</h2>
-                    <p class="preço">R$ 99,99</p>
-</div>
-    </div>
+        <label for="email">Email</label><br><br>
+        <input type="email" id="email" placeholder="seu@email.com" required><br><br>
+
+        <label for="telefone">Telefone</label><br><br>
+        <input type="tel" id="telefone" placeholder="(51) 99999-9999"><br><br>
+
+        <label for="nascimento">Data de nascimento</label><br><br>
+        <input type="date" id="nascimento" required><br><br>
+
+        <label for="tamanho">Tamanho (numero de 34 a 46)</label><br><br>
+        <input type="number" id="tamanho" min="34" max="46" step="2" placeholder="ex:38"><br><br>
+        
+        <label for="produto">Produto de interesse</label><br><br>
+        <select id="produto" required>
+                <option value="">Escolha um produto</option>
+                <option value="camiseta">Camiseta</option>
+                <option value="calça">Calça</option>
+                <option value="jaqueta">Jaqueta</option>
+                <option value="tenis">Tenis</option>
+                <option value="vestido">Vestido</option>
+
+        </select>
+        <fieldset>
+            <legend>Forma de contato preferida</legend>
+            <label><input type="radio" name="contato" value="email" checked>email</label>
+            <label><input type="radio" name="contato" value="telefone" checked>Telefone</label>
+             <label><input type="radio" name="contato" value="Whatsapp" checked>Whatsapp</label>
+
+
+        </fieldset>
+
+        <fieldset>
+            <legend>interesses</legend>
+             <label><input type="checkbox" name="interesse" value="promocoes" checked>Promoções</label>
+             <label><input type="checkbox" name="interesse" value="novidades" checked>novidades</label>
+             <label><input type="checkbox" name="interesse" value="eventos" checked>Eventos</label>
+             
+        </fieldset><br><br>
+        <label for="mensagem">Mensagem</label><br>
+        <textarea name="mensagem" id="mensagem" placeholder="Escreva sua duvida" maxlength="200"></textarea>
+            <br>
+        <button type="submit">Enviar</button>
+        
+
+
+    </form>
 </main>
+
 
 
 
